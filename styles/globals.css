@@ -18,10 +18,13 @@ a {
 @tailwind utilities;
 @layer components {
   .side-bar {
-    @apply bg-slate-700 w-28 flex flex-col h-32 justify-center align-middle items-center  fixed top-1/2 -left-24 hover:translate-x-24 duration-300 hover:ease-in-out rounded-r-lg text-sm shadow-2xl;
+    @apply bg-slate-700 w-28 flex flex-col h-32 justify-center align-middle items-center  fixed top-1/2 left-24 hover:translate-x-24 duration-300 hover:ease-in-out rounded-r-lg text-sm shadow-2xl;
+  }
+  .side-bar > * {
+    @apply p-3;
   }
   .writing-link,
   .development-link {
-    @apply p-12;
+    @apply border-b-2 border-white;
   }
 }

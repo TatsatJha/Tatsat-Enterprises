@@ -7,9 +7,9 @@ type linkProps = {
 }
 
 function SideBarButton(props: linkProps) {
-  return <div>
+  return <div className={`${props.linkTo}-link`}>
     <Link href={`/${props.linkTo}`}>
-      <a className={`${props.linkTo}-link`}> {props.icon}</a>
+      <a> {props.icon}</a>
     </Link>
   </div>;
 }

@@ -26,7 +26,7 @@ a {
   .side-bar > .writing-link {
     @apply bg-orange-600 text-orange-900 border-orange-900 border-b-2 border-b-gray-700 rounded-tr-lg;
   }
-  .side-bar > .development-link {
+  .side-bar > .dev-link {
     @apply bg-blue-600 text-blue-900 border-blue-900 border-t-2 border-t-gray-700 rounded-br-lg;
   }
 }

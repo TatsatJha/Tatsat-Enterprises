@@ -1,14 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 type page= {
   page: string
 }
 
 function Header(props: page) {
-  const color:String = props.page === "/dev" ? "blue" : props.page === "/writing" ? "orange" : "teal"
+  let color:String = ""
+  useEffect(()=>{
+    color = (props.page === "/dev") ? "blue" : props.page === "/writing" ? "orange" : "teal"
+    console.log(color)
+  })
   return <div> 
         <h1 className= {`text-5xl font-medium text-center border-b-4 border-b-${color}-900 p-8 bg-slate-900 text-${color}-700`}>
-          Tatsat Enterprises
+          Tatsat Jha
         </h1>
     </div>;
 }

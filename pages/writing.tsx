@@ -1,10 +1,10 @@
 import React from 'react';
-import Header from "../Components/Header"
+import {WritingHeader} from "../Components/Header"
 import {MainDev} from "../Components/Main"
 
 function writing() {
   return <div>
-      <Header page="writing"></Header>
+      <WritingHeader></WritingHeader>
       <MainDev></MainDev>
   </div>;
 }

@@ -24,7 +24,7 @@ a {
     @apply p-3 px-7 border-4;
   }
   .side-bar > .-link {
-    @apply bg-teal-600 text-teal-900 border-teal-900 border-b-2 border-b-gray-600 rounded-tr-lg;
+    @apply bg-cyan-600 text-cyan-900 border-cyan-900 border-b-2 border-b-gray-600 rounded-tr-lg;
   }
   .side-bar > .writing-link {
     @apply bg-orange-600 text-orange-900 border-orange-900 border-t-2 border-t-gray-600 border-b-2 border-b-gray-700;

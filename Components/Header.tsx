@@ -5,25 +5,30 @@ type pageProp= {
   page: string
 }
 
-function Header(props: pageProp) {
-  // const [Theme, setTheme] = useState("teal");
-  // useEffect(() => {
-  //   console.log(Theme)
-  // }, [Theme]);
-  // const themeHandler = (color: string)=>{
-  //   setTheme(color)
-  // }
-  
-  // let color:String = ""
-  // color = (props.page === "/dev") ? "blue" : props.page === "/writing" ? "orange" : "teal"
-  // console.log(color)
-  
+export const HomeHeader = () => {
   return <div> 
-        <h1 className= {`text-5xl font-medium text-center border-b-4 border-b-teal-900 p-8 bg-slate-900 text-teal-700`}>
-          Tatsat Jha
-        </h1>
+      <h1 className= {`text-7xl font-extralight text-center border-b-4 border-b-cyan-600 p-8 bg-slate-900 text-gray-100 bg-gradient-to-r from-gray-900 via-cyan-600 to-gray-900`}>
+        Tatsat Jha
+      </h1>
     <SideBar/>
-    </div>;
-}
+  </div>;
+};
 
-export default Header;
+
+export const WritingHeader = () => {
+  return <div> 
+      <h1 className= {`text-7xl font-extralight text-center border-b-4 border-b-orange-600 p-8 bg-slate-900 text-gray-100 bg-gradient-to-r from-gray-900 via-orange-600 to-gray-900`}>
+        Tatsat Jha
+      </h1>
+    <SideBar/>
+  </div>;
+};
+
+export const DevHeader = () => {
+  return <div> 
+      <h1 className= {`text-7xl font-extralight text-center border-b-4 border-b-blue-600 p-8 bg-slate-900 text-gray-100 bg-gradient-to-r from-gray-900 via-blue-600 to-gray-900`}>
+        Tatsat Jha
+      </h1>
+    <SideBar/>
+  </div>;
+};

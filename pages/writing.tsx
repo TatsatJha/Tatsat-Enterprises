@@ -1,11 +1,11 @@
 import React from 'react';
 import Header from "../Components/Header"
-import SideBar from '../Components/SideBar';
+import {MainDev} from "../Components/Main"
 
 function writing() {
   return <div>
-      <Header page="/writing"></Header>
-      <SideBar></SideBar>
+      <Header page="writing"></Header>
+      <MainDev></MainDev>
   </div>;
 }
 

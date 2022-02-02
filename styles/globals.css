@@ -18,15 +18,27 @@ a {
 @tailwind utilities;
 @layer components {
   .side-bar {
-    @apply bg-slate-700 w-24 flex flex-col h-32 justify-center align-middle items-center  fixed top-1/2 -left-20 hover:translate-x-20 duration-300 hover:ease-in-out rounded-r-lg text-sm shadow-2xl;
+    @apply bg-slate-700 w-24 flex flex-col h-48 justify-center align-middle items-center  fixed top-1/2 -left-20 hover:translate-x-20 duration-300 hover:ease-in-out rounded-r-lg text-sm shadow-2xl;
   }
   .side-bar > * {
     @apply p-3 px-7 border-4;
   }
+  .side-bar > .-link {
+    @apply bg-teal-600 text-teal-900 border-teal-900 border-b-2 border-b-gray-600 rounded-tr-lg;
+  }
   .side-bar > .writing-link {
-    @apply bg-orange-600 text-orange-900 border-orange-900 border-b-2 border-b-gray-700 rounded-tr-lg;
+    @apply bg-orange-600 text-orange-900 border-orange-900 border-t-2 border-t-gray-600 border-b-2 border-b-gray-700;
   }
   .side-bar > .dev-link {
     @apply bg-blue-600 text-blue-900 border-blue-900 border-t-2 border-t-gray-700 rounded-br-lg;
   }
+  /* .home {
+    @apply text-5xl font-medium text-center border-b-4 border-b-teal-900 p-8 bg-slate-900 text-teal-700;
+  }
+  .writing {
+    @apply text-5xl font-medium text-center border-b-4 border-b-orange-900 p-8 bg-slate-900 text-orange-700;
+  }
+  .dev {
+    @apply text-5xl font-medium text-center border-b-4 border-b-blue-900 p-8 bg-slate-900 text-blue-700;
+  } */
 }

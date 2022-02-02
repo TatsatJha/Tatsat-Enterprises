@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 type linkProps = {
     linkTo:string,
-    icon: ReactElement
+    icon: ReactElement,
 }
 
 function SideBarButton(props: linkProps) {

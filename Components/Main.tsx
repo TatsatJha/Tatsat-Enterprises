@@ -1,7 +1,20 @@
 import React from 'react';
+import SideBar from './SideBar';
 
-function Main() {
-  return <div className="h-screen w-full bg-black">Wassup Danger</div>;
-}
+export const MainHome = () => {
+  return <div className="h-screen w-full bg-black">
+      Wassup Danger
+    </div>;
+};
 
-export default Main;
+export const MainWriting = () => {
+  return <div className="h-screen w-full bg-black">
+    Wassup Danger
+</div>;
+};
+
+export const MainDev = () => {
+  return <div className="h-screen w-full bg-black">
+    Wassup Danger
+</div>;
+};

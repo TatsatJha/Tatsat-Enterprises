@@ -18,6 +18,7 @@ a {
 @tailwind components;
 @tailwind utilities;
 @layer components {
+  /* Side Bar Styles */
   .side-bar {
     @apply bg-slate-700 w-24 flex flex-col h-48 justify-center align-middle items-center  fixed top-1/2 -left-20 hover:translate-x-20 duration-300 hover:ease-in-out rounded-r-lg text-sm shadow-2xl;
   }

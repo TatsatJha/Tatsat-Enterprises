@@ -7,7 +7,7 @@ type pageProp= {
 
 export const HomeHeader = () => {
   return <div> 
-      <h1 className= {`text-7xl font-extralight text-center border-b-4 border-b-cyan-600 p-8 bg-slate-900 text-gray-100 bg-gradient-to-r from-gray-900 via-cyan-600 to-gray-900`}>
+      <h1 className= {`text-7xl font-extralight text-center border-b-4 border-b-cyan-600 p-8 bg-slate-900 text-gray-100 bg-gradient-to-r from-gray-900 via-cyan-600 to-gray-900 font-sans`}>
         Tatsat Jha
       </h1>
     <SideBar/>

@@ -13,6 +13,7 @@ a {
 * {
   box-sizing: border-box;
 }
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -32,13 +33,4 @@ a {
   .side-bar > .dev-link {
     @apply bg-blue-600 text-blue-900 border-blue-900 border-t-2 border-t-gray-700 rounded-br-lg;
   }
-  /* .home {
-    @apply text-5xl font-medium text-center border-b-4 border-b-teal-900 p-8 bg-slate-900 text-teal-700;
-  }
-  .writing {
-    @apply text-5xl font-medium text-center border-b-4 border-b-orange-900 p-8 bg-slate-900 text-orange-700;
-  }
-  .dev {
-    @apply text-5xl font-medium text-center border-b-4 border-b-blue-900 p-8 bg-slate-900 text-blue-700;
-  } */
 }

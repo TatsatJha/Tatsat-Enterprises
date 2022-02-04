@@ -3,7 +3,7 @@ import SideBar from './SideBar';
 import { BsChevronDown } from 'react-icons/bs';
 
 export const MainHome = () => {
-  return <div className="h-screen w-full bg-gray-900 bg-gradient-to-b text-stone-300 pt-20">
+  return <div className="h-screen w-full bg-gray-900 bg-gradient-to-b text-stone-300 pt-20 font-montserrat">
 
       <h1 className =  "text-center font-light text-5xl border-cyan-700 border-4 w-fit mr-auto ml-auto p-10 text-stone-300 rounded-lg top-0 translate-y-4 duration-75 bg-gray-800 shadow-xl">
         I <span className='text-orange-700'>Write Fantasy Books</span> and <span className='text-blue-700'>Develop Software</span>

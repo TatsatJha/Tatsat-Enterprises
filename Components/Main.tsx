@@ -39,10 +39,18 @@ export const MainHome = () => {
       <section className='ml-36 mt-36'>
         <h2 ref= {myRef} className='font-bold text-4xl p-3'> Who I Am </h2>
         <p className='font-serif text-xl m-6 w-1/2'> 
-          High school student Based in Phoenix Arizona. I'm passionate about Developing New Projects and Optimizing Processes. I find the best places for Creation to be in Software and Books. I'm working on Developing Progressively more Complex Applications and starting a Business.
+          High school student Based in Phoenix Arizona. I Enjoy the Process of Creation and Optimization. I find the best places for Creativity to be in Software and Storytelling. As such, I'm working on Developing my skills to create better Software and Write better Books.
         </p>
+        
         <h2 className='font-bold text-4xl p-6'> What I Do </h2>
+        <p className='font-serif text-xl m-6 w-1/2'> 
+          My primary focuses are on the writing of my book series and developing of Software. The foremost Application in my pipeline consists of RainTXT which you can read more about in the dev blog. 
+        </p>
+        
         <h2 className='font-bold text-4xl p-6'> Experience </h2>
+        <p className='font-serif text-xl m-6 w-1/2'> 
+          
+        </p>
       </section>
     </div>;
 };

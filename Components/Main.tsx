@@ -49,7 +49,11 @@ export const MainHome = () => {
         
         <h2 className='font-bold text-4xl p-6'> Experience </h2>
         <p className='font-serif text-xl m-6 w-1/2'> 
-          
+          Working at Press Tecnical Writing as a  Technical Writer
+          Experienced with Full Stack Development technologies such as CSS, HTML, Typescript, ReactJS, NextJS, ElectronJS, and MongoDB as well as Java, Python and Git
+          Worked as Technical Director and Mechanical Design Lead at my Robotics Team
+          Total of 4 years of experience in Computer Science
+          Total of 4 years of experience in Creative Writing
         </p>
       </section>
     </div>;

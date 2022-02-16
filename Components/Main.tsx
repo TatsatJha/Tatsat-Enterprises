@@ -1,6 +1,7 @@
 import React, { MouseEventHandler, useRef } from 'react';
+import TagLine from './MainHome/tagline';
+import LearnMoreBtn from './MainHome/LearnMoreBtn';
 import Link from 'next/link';
-import SideBarButton from './SideBarButton';
 import { BsChevronDown } from 'react-icons/bs';
 
 
@@ -9,22 +10,12 @@ export const MainHome = () => {
   const executeScroll = () => myRef.current!.scrollIntoView()   
 
   return <div className="w-full bg-gray-900 bg-gradient-to-b text-stone-300 pt-20 font-montserrat">
+      <TagLine/>
 
-      <h1 className =  "text-center font-light text-[44px] border-cyan-700  w-fit ml-12 mr-auto p-8 text-stone-300 rounded-lg top-0 translate-y-4 duration-75 shadow-xl">
-        <span className='text-orange-700'>Creative Writer</span> <span className='text-cyan-700'>//</span> <span className='text-blue-700'>Software Developer</span>
-      </h1>
-    
       <div className='flex justify-evenly mt-64'>
-        <Link href={"/writing"}>
-          <button className='border-orange-900 border-4 text-orange-900 bg-orange-600 p-5 text-2xl hover:-translate-y-2 duration-300 ease-in-out shadow-xl rounded-2xl' > 
-            Learn More About My Writing
-          </button>
-        </Link>
-        <Link href={"/dev"}>
-          <a className='border-blue-900 border-4 text-blue-900 bg-blue-600 p-5 text-2xl hover:-translate-y-2 duration-300 ease-in-out shadow-xl rounded-2xl' >
-            Learn More About My Software
-          </a>
-        </Link>
+        <LearnMoreBtn linkTo='writing'></LearnMoreBtn>
+        <LearnMoreBtn linkTo='dev'></LearnMoreBtn>
+        
       </div>
 
       <div className='border-b-2 border-cyan-900 pb-32'>
@@ -61,7 +52,7 @@ export const MainHome = () => {
             Total of 4 years of experience in Creative Writing
           </p>
         </section>
-        
+
       </section>
     </div>;
 };

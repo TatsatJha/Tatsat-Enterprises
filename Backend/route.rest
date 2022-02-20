@@ -1,1 +1,10 @@
-GET http://localhost:3001/blog
+GET http://localhost:3001/blogs
+
+###
+POST http://localhost:3001/blogs
+Content-Type: application/json
+
+{
+    "title": "Blog Entry 1",
+    "content": "So This is a test for the dev blogs"
+}

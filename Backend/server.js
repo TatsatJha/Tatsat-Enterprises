@@ -8,7 +8,7 @@ db.on("error", (error) => {console.log(error)})
 db.once("open", ()=>{console.log("db")})
 
 app.use(express.json())
-const blogRouter = require("./routes/blog.js")
-app.use("/blog", blogRouter)
+const blogRouter = require("./routes/blogs")
+app.use("/blogs", blogRouter)
 
 app.listen(3001, ()=>console.log("server"))

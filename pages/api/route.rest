@@ -1,0 +1,13 @@
+GET http://localhost:3001/blogs
+
+###
+POST http://localhost:3000/api/blog
+Content-Type: application/json
+
+{
+    "title": "Blog Entry 2",
+    "content": "So This is a test for dev blogs from the next api"
+}
+
+###
+DELETE http://localhost:3000/api/blog

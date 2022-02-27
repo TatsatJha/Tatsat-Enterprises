@@ -7,7 +7,7 @@ import Link from 'next/link';
 import { BsChevronDown } from 'react-icons/bs';
 
 const makeBlog = ()=>{
-  axios.post("http://localhost:3000/blog", {title: "test1", content:"test2"})
+  axios.post("http://localhost:3000/api/blog", {title: "test1", content:"test2"})
 }
 
 

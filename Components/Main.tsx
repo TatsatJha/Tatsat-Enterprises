@@ -3,6 +3,7 @@ import LearnMoreBtn from './MainHome/LearnMoreBtn';
 import Tagline from './MainHome/TagLine';
 import Content from './MainHome/Content';
 import axios from 'axios';
+import Blogs from "./MainWriting/Blogs"
 import Link from 'next/link';
 import { BsChevronDown } from 'react-icons/bs';
 
@@ -41,6 +42,7 @@ export const MainHome = () => {
 export const MainWriting = () => {
   return <div className="h-screen w-full bg-gray-900 bg-gradient-to-b text-stone-300 pt-20">
     <button className='p-6 bg-orange-700' onClick={makeBlog}> Make Blog Entry </button>
+    <Blogs></Blogs>
   </div>;
 };
 

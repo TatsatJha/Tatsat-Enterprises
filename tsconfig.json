@@ -15,6 +15,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "Components/SideBar.jsx", "Components/Header.ssx", "Backend/server.js", "pages/api/models/blog.ts", "pages/api/middleware/mongodb.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "Components/SideBar.jsx", "Components/Header.ssx", "Backend/server.js", "pages/api/models/blog.ts", "pages/api/middleware/mongodb.js", "Components/MainWriting/Blogs.jsx"],
   "exclude": ["node_modules"]
 }

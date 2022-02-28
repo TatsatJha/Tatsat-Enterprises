@@ -1,24 +1,36 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
 import connectDb from "../middleware/mongodb"
 import Blog from "../models/blog"
-import {getBlog} from "../middleware/getBlog"
+
 
 async function handler( req: NextApiRequest, res: NextApiResponse) {
     const {
-        query: { id, name },
+        query: { id },
         method,
       } = req
+    // const getBlog = async ()=>{
+    //     let blog = null
+    //     try {
+    //         blog = Blog.findById(id)
+    //         return blog
+    //     } catch (error) {
+    //         return null
+    //     }
+    // }
     switch (req.method){
     case "GET":
         try {
             const blog = await Blog.findById(id)
-        res.status(200).json(blog)
+            if(blog === null){res.status(404).json({message:"not found"})}
+            res.status(200).json(blog)
         } catch (err){res.status(500)}
         break;
     case "DELETE":
         try {
-        const blogs = await Blog.deleteMany()
-        res.json(blogs)
+        const blog = await Blog.findById(id)
+        if(blog === null){res.status(404).json({message:"not found"})}
+        await Blog.findByIdAndDelete(id)
+        res.json(blog)
         } catch (error:any) {res.status(500)}
         break;
     default:

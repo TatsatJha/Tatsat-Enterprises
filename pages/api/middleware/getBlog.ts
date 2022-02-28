@@ -1,7 +1,7 @@
 import type { NextApiRequest, NextApiResponse, } from 'next'
 import Blog from "../models/blog"
 
-const getBlog = async (req: NextApiRequest, res:any, next:any) =>{
+const getBlog = async (req: NextApiRequest, res:any) =>{
     let blog
     try {
         blog = await Blog.findById(req.query.id)
@@ -9,7 +9,6 @@ const getBlog = async (req: NextApiRequest, res:any, next:any) =>{
     } catch (error: any) {
         return res.status(500).json({message: error.message})
     }
-    res.blog = blog
-    next()
+    return blog
 }
 export{getBlog}

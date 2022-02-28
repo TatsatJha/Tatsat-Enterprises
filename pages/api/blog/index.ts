@@ -15,6 +15,7 @@ async function handler( req: NextApiRequest, res: NextApiResponse) {
       } catch (err){res.status(500)}
       break;
     case "POST":
+      // console.log("we're here baby")
       const blogEntry = new blog({
         title: req.body.title,
         content: req.body.content

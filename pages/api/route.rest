@@ -1,14 +1,19 @@
 GET http://localhost:3000/api/blog
 
-
+###
+GET http://localhost:3000/api/blog/
 ###
 POST http://localhost:3000/api/blog
 Content-Type: application/json
 
 {
     "title": "Blog Entry 2",
-    "content": "We'll try to find this exact bit take two"
+    "content": "We'll delete this one"
 }
 
 ###
 DELETE http://localhost:3000/api/blog
+
+###
+DELETE http://localhost:3000/api/blog/621ac9096ebad7db10170f45
+

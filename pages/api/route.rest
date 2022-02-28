@@ -7,8 +7,8 @@ POST http://localhost:3000/api/blog
 Content-Type: application/json
 
 {
-    "title": "Blog Entry 2",
-    "content": "We'll delete this one"
+    "title": "First Ever Blog",
+    "content": "Okay so I'm going to put in some dummy text here so that we can style this later on. This will act as the first ever blog that our server and database are handling. It's quite awesome because this app actually works, it's not just some dinky little thing. We've acutally made a REST API and actually have ways to interact with it on the frontend. Next thing I'll need to do is make the actual authentication so that I can keep the website all nice and I'm the only one who can make changes to the blogs. Anyway. That's it for the First Blog. Here's to The Start of Tatsat Enterprises"
 }
 
 ###

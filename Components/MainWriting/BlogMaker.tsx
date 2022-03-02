@@ -24,7 +24,7 @@ function BlogMaker() {
             <input className = "block m-3 p-6 w-full" value={content} onChange={(event)=>{setContent(event.target.value)}} name = "Content"></input>
             <button onClick={handleSubmit}>Submit</button>
         </div> 
-        : <button className='p-6 bg-orange-700' onClick={handler}>Create Blog</button> }
+        : <button className='p-4 bg-orange-700 rounded-xl shadow-inner m-3 ml-6' onClick={handler}>Create Blog</button> }
     </div>
   )
 }

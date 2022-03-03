@@ -17,7 +17,8 @@ async function handler( req: NextApiRequest, res: NextApiResponse) {
     //         return null
     //     }
     // }
-    switch (req.method){
+    
+    switch (req.body.method){
     case "GET":
         try {
             const blog = await Blog.findById(id)
@@ -25,6 +26,21 @@ async function handler( req: NextApiRequest, res: NextApiResponse) {
             res.status(200).json(blog)
         } catch (err){res.status(500)}
         break;
+    case "PUT":
+        const updatedBlog = new Blog({
+            title: req.body.title,
+            content: req.body.content
+          })
+        try {
+            const blog = await Blog.findById(id)
+            console.log(blog)
+            if(blog === null){res.status(404).json({message:"not found"})}
+
+            console.log(updatedBlog)
+            await Blog.findByIdAndUpdate(id, updatedBlog)
+        } catch (err) {
+            res.status(500)
+        }
     case "DELETE":
         try {
         const blog = await Blog.findById(id)

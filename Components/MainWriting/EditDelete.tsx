@@ -7,14 +7,18 @@ function EditDelete(data:any) {
         axios.delete(`http://localhost:3000/api/blog/${data.id}`)
     }
     
+    const handleEdit = () =>{
+        axios.put(`http://localhost:3000/api/blog/${data.id}`, {title: 'dafdsfasdfasfdas', content:"df"})
+    }
+
   return (
-    <div>
-        <button onClick={handleDelete}>
+    <div >
+        <button onClick={handleEdit}>
             <BsPencilFill size="24px"/>
         </button>
-        <button onClick={handleDelete}>
+        {/* <button onClick={handleDelete}>
             <BsTrash size="24px"/>
-        </button>
+        </button> */}
     </div>
   )
 }

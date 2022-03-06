@@ -24,7 +24,7 @@ function EditDelete(data:any) {
   return (
     <div>
         {open ? 
-        <BlogForm submit={handleSubmit} title={title} content={content} setTitle={setTitle} setContent={setContent}></BlogForm> 
+        <BlogForm submit={handleSubmit} title={title} content={content} setTitle={setTitle} setContent={setContent} id={data.id}></BlogForm> 
         :
         <div className="p-2.5 pt-5 rounded-xl bg-gray-500 inline"> 
             <button onClick={()=>setOpen(!open)} className="p-2.5">

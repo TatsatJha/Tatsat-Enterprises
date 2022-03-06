@@ -17,8 +17,7 @@ async function handler( req: NextApiRequest, res: NextApiResponse) {
     //         return null
     //     }
     // }
-    
-    switch (req.body.method){
+    switch (method){
     case "GET":
         try {
             const blog = await Blog.findById(id)
@@ -36,11 +35,10 @@ async function handler( req: NextApiRequest, res: NextApiResponse) {
             console.log(blog)
             if(blog === null){res.status(404).json({message:"not found"})}
 
-            console.log(updatedBlog)
-            await Blog.findByIdAndUpdate(id, updatedBlog)
-        } catch (err) {
-            res.status(500)
-        }
+            await Blog.findByIdAndUpdate(id, {title: req.body.title, content: req.body.content})
+            res.status(200).json(updatedBlog)
+        } catch (err) {res.status(500)}
+        break;
     case "DELETE":
         try {
         const blog = await Blog.findById(id)
@@ -51,7 +49,8 @@ async function handler( req: NextApiRequest, res: NextApiResponse) {
         break;
     default:
         res.setHeader('Allow', ['GET', 'PUT', 'DELETE'])
-        res.status(405).end(`Method ${method} Not Allowed`)      
+        res.status(405).end(`Method ${method} Not Allowed`) 
+        break;   
     }
 }
   

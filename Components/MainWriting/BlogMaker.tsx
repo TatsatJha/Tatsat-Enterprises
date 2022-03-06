@@ -1,13 +1,12 @@
 import axios from 'axios'
 import React, { useState } from 'react'
+import BlogForm from "./BlogForm"
 
 function BlogMaker() {
     const [open, setOpen] = useState(false)
     const [title, setTitle] = useState("")
     const [content, setContent] = useState("")
-    const handler = ()=>{
-        setOpen(!open)
-    }
+    
     const handleSubmit = ()=>{
         if(title === "" || content === ""){
             setOpen(!open)
@@ -19,12 +18,8 @@ function BlogMaker() {
   return (
     <div>
         {open ? 
-        <div className='p-12'> 
-            <input className = "block m-3 p-6" value={title} onChange={(event)=>{setTitle(event.target.value)}} name="Title"></input>
-            <input className = "block m-3 p-6 w-full" value={content} onChange={(event)=>{setContent(event.target.value)}} name = "Content"></input>
-            <button onClick={handleSubmit}>Submit</button>
-        </div> 
-        : <button className='p-4 bg-orange-700 rounded-xl shadow-inner m-3 ml-6' onClick={handler}>Create Blog</button> }
+        <BlogForm submit={handleSubmit} title={title} content={content} setTitle={setTitle} setContent={setContent}></BlogForm> 
+        : <button className='p-4 bg-orange-700 rounded-xl shadow-inner m-3 ml-6' onClick={()=>setOpen(!open)}>Create Blog</button> }
     </div>
   )
 }

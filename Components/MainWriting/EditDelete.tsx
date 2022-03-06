@@ -8,7 +8,7 @@ function EditDelete(data:any) {
     }
     
     const handleEdit = () =>{
-        axios.put(`http://localhost:3000/api/blog/${data.id}`, {title: 'dafdsfasdfasfdas', content:"df"})
+        axios.put(`http://localhost:3000/api/blog/${data.id}`, {title: 'dafdsfasdfasfdas', content:"fadsfadsf"})
     }
 
   return (

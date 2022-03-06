@@ -14,7 +14,7 @@ function Blogs() {
                 setBlogs(blogs)
             })
         }
-    getBlogs()}, [])
+    getBlogs()}, [blog])
     return (
         <div className='blogs'>
             {blog.map((blogs) => (<Blog title={blogs.title} content={blogs.content} id={blogs._id} v={blogs._v}></Blog>))}

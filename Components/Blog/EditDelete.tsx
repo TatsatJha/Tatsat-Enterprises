@@ -26,7 +26,7 @@ function EditDelete(data:any) {
         {open ? 
         <BlogForm submit={handleSubmit} title={title} content={content} setTitle={setTitle} setContent={setContent} id={data.id}></BlogForm> 
         :
-        <div className="p-2.5 pt-5 rounded-xl bg-gray-500 inline"> 
+        <div className="p-2.5 pt-5 rounded-xl bg-orange-700 inline"> 
             <button onClick={()=>setOpen(!open)} className="p-2.5">
                 <BsPencilFill size="24px"/>
             </button>

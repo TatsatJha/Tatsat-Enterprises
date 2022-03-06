@@ -22,9 +22,9 @@ function BlogForm(props:any) {
 getBlogData()}, [])
   return (
     <div className='p-12'> 
-        <input className = "block m-3 p-6" value={props.title} onChange={(event)=>{props.setTitle(event.target.value)}} name="Title"></input>
-        <input className = "block m-3 p-6 w-full" value={props.content} onChange={(event)=>{props.setContent(event.target.value)}} name = "Content"></input>
-        <button onClick={props.submit}>Submit</button>
+        <input className = "block my-3 p-6 rounded-2xl bg-orange-700" value={props.title} onChange={(event)=>{props.setTitle(event.target.value)}} name="Title"></input>
+        <input className = "block my-3 p-6 h-48 rounded-2xl w-full bg-orange-700" value={props.content} onChange={(event)=>{props.setContent(event.target.value)}} name = "Content"></input>
+        <button className = "bg-orange-700 px-6 py-4 rounded-2xl" onClick={props.submit}>Submit</button>
     </div>
   )
 }

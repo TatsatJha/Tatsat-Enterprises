@@ -3,10 +3,10 @@ import LearnMoreBtn from './MainHome/LearnMoreBtn';
 import Tagline from './MainHome/TagLine';
 import Content from './MainHome/Content';
 import axios from 'axios';
-import Blogs from "./MainWriting/Blogs"
+import Blogs from "./Blog/Blogs"
 import Link from 'next/link';
 import { BsChevronDown } from 'react-icons/bs';
-import BlogMaker from './MainWriting/BlogMaker';
+import BlogMaker from './Blog/BlogMaker';
 
 const makeBlog = ()=>{
   axios.post("http://localhost:3000/api/blog", {title: "test1", content:"test2"})

@@ -13,10 +13,15 @@ module.exports = {
         wiggle: {
           '0%, 100%': { transform: 'rotate(-3deg)' },
           '50%': { transform: 'rotate(3deg)' },
-        }
+        },
+        fadeIn: {
+          "0%": {opacity:"0%"},
+          "100%": {opacity:"100%"}
+        },
       },
       animation: {
         fadeUp: 'fadeUp .75s 1 ease-in-out',
+        fadeIn: 'fadeIn .75s 1 ease-in-out',
         wiggle: 'wiggle 1s ease-in-out infinite',
       }
     }

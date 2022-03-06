@@ -26,12 +26,12 @@ function EditDelete(data:any) {
         {open ? 
         <BlogForm submit={handleSubmit} title={title} content={content} setTitle={setTitle} setContent={setContent} id={data.id}></BlogForm> 
         :
-        <div className="p-2.5 pt-5 rounded-xl bg-orange-700 inline"> 
-            <button onClick={()=>setOpen(!open)} className="p-2.5">
-                <BsPencilFill size="24px"/>
+        <div className= " p-1.5 my-9 mx-20 rounded-xl bg-orange-700 inline absolute animate-fadeIn "> 
+            <button onClick={()=>setOpen(!open)} className="p-2 py-3 block border-b-2">
+                <BsPencilFill size="22px"/>
             </button>
-            <button onClick={handleDelete} className="p-2.5">
-                <BsTrash size="24px"/>
+            <button onClick={handleDelete} className="p-2 py-3 block">
+                <BsTrash size="22px"/>
             </button>
         </div>
     }

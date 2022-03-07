@@ -4,7 +4,11 @@ import BlogForm from "./BlogForm";
 import { BsTrash, BsPencilFill} from "react-icons/bs"
 
 function EditDelete(data:any) {
-    const [open, setOpen] = useState(false)
+    const {
+        open,
+        setOpen
+    } = data
+    
     const [title, setTitle] = useState("")
     const [content, setContent] = useState("")
     

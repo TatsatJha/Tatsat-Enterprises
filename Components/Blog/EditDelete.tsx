@@ -8,7 +8,6 @@ function EditDelete(data:any) {
         open,
         setOpen
     } = data
-    
     const [title, setTitle] = useState("")
     const [content, setContent] = useState("")
     

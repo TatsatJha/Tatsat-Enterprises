@@ -15,10 +15,12 @@ async function handler( req: NextApiRequest, res: NextApiResponse) {
       } catch (err){res.status(500)}
       break;
     case "POST":
-      // console.log("we're here baby")
+      const date = new Date
+      const month = new Intl.DateTimeFormat("en-us", {month: "long"}).format(date)
       const blogEntry = new blog({
         title: req.body.title,
-        content: req.body.content
+        content: req.body.content,
+        date: `${month} ${date.getDate()}, ${date.getFullYear()}`
       })
       try {
         const newBlog = await blogEntry.save()

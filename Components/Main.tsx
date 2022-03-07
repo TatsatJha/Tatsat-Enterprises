@@ -41,10 +41,14 @@ export const MainHome = () => {
 };
 
 export const MainWriting = () => {
-  return <div className="h-screen w-full bg-gray-900 bg-gradient-to-b text-stone-300 pt-20">
-    {/* <button className='p-6 bg-orange-700' onClick={makeBlog}> Make Blog Entry </button> */}
+  return <div className="h-screen w-full bg-stone-200 bg-gradient-to-b text-gray-900 pt-4">
     <BlogMaker></BlogMaker>
-    <Blogs></Blogs>
+    <section className='bg-stone-200 text-gray-900'>
+      <h1 className=' w-1/2 mx-auto p-6 text-4xl border-b-[3px] border-slate-900'>Blog</h1>
+      <div className='flex justify-center'>
+        <Blogs></Blogs>
+      </div>
+    </section>
   </div>;
 };
 

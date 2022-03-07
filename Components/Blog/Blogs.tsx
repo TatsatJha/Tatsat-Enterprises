@@ -15,10 +15,10 @@ function Blogs() {
             })
         }
     getBlogs()}, [blog])
-    
+
     return (
-        <div className='blogs'>
-            {blog.map((blogs) => (<Blog title={blogs.title} content={blogs.content} id={blogs._id} v={blogs._v}></Blog>))}
+        <div className='w-1/2'>
+            {blog.map((blogs) => (<Blog date={blogs.date} title={blogs.title} content={blogs.content} id={blogs._id} v={blogs._v}></Blog>))}
         </div>
     )
 }
